@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #333;
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.menu-circle{
+    width: 7rem;
+    height: 7rem;
+    background-color: brown;
+    border-radius: 0 0 7rem 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.menu-icon{
+    font-size: 1.5rem;
+    color: aliceblue;
+    position: relative;
+    top: 3rem;
+    left: 1.5rem;
+    cursor: pointer;
+}
+
+.cancel-icon{
+    font-size: 1.5rem;
+    color: aliceblue;
+    position: relative;
+    top: 3rem;
+    left: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.main{
+    width: 100%;
+    background-color: rgb(240, 241, 241);
+    transition: all .5s linear;
+}
+
+.active{
+    transform: rotate(-20deg);
+    transform-origin: 0 0;
+    transition: transform 0.5s linear;
+}
+
+.main-content{
+    max-width: 60%;
+    height: 100%;
+    margin-left: 20%;
+    background-color: rgb(240, 241, 241);
+}
+
+h3, h4{
+    margin: 0;
+}
+
+h3{
+    font-size: 1.5rem;
+    padding-top: 3rem;
+}
+
+#subtitle{
+    font-weight: 100;
+}
+
+.subtitle{
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 500;
+    line-break: 1rem;
+}
+
+img{
+    border: 5px solid brown; 
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+    z-index: 100;
+}
+
+.show-menu i{
+    transform: translateX(0);
+    transition-delay: .1s;
+}
+
+.menu i{
+    font-size: 1.5rem;
+    color: aliceblue;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+span{
+    font-size: 1rem;
+    padding-left: .5rem;
+    font-weight: 400;
+    letter-spacing: .3rem;
+}
+
+.home{
+    transform: translateX(-50%);
+    transition: transform .4s ease-in;
+}
+
+.about{
+    margin-left: 1rem;
+    transform: translateX(-100%);
+    transition: transform .4s ease-in;
+}
+
+.contact{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    transform: translateX(-150%);
+    transition: transform .4s ease-in;
+}
